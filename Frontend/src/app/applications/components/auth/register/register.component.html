@@ -1,0 +1,55 @@
+
+<div class="card">
+  <div style="display: flex; justify-content: center">
+    <h5>Yeni kullanıcı kayıt</h5>
+  </div>
+
+  <form [formGroup]="registerGroup" (ngSubmit)="RegisterUser()">
+    <div class="field grid">
+      <label for="Email" class="col-12 mb-2 md:col-2 md:mb-0">Email</label>
+      <div class="col-12 md:col-10">
+        <input id="Email" formControlName="Email" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+    </div>
+
+    <div class="field grid">
+      <label for="Username" class="col-12 mb-2 md:col-2 md:mb-0">Kullanıcı Adı</label>
+      <div class="col-12 md:col-10">
+        <input id="Username" formControlName="Username" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+    </div>
+
+
+    <div class="field grid">
+      <label for="Password" class="col-12 mb-2 md:col-2 md:mb-0">Şifre</label>
+      <div class="col-12 md:col-10">
+        <input id="Password" formControlName="Password" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+    </div>
+
+    <div class="field grid">
+      <label for="Firstname" class="col-12 mb-2 md:col-2 md:mb-0">Adı</label>
+      <div class="col-12 md:col-10">
+        <input id="Firstname" formControlName="Firstname" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+    </div>
+
+    <div class="field grid">
+      <label for="Surname" class="col-12 mb-2 md:col-2 md:mb-0">Soyadı</label>
+      <div class="col-12 md:col-10">
+        <input id="Surname" formControlName="Surname" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+    </div>
+  </form>
+
+
+
+  <div style="display: flex; justify-content: flex-end">
+    <button type="button" pRipple
+            (click)="RegisterUser()"
+            style="margin-right: 0"
+            class="text-white bg-primary-500 border-primary-500 px-3 py-2 text-base border-1 border-solid border-round cursor-pointer transition-all transition-duration-200 hover:bg-primary-600 hover:border-primary-600 active:bg-primary-700 active:border-primary-700">Kayıt Ol</button>
+  </div>
+
+</div>
+
